@@ -2,7 +2,9 @@
 
 # What should my nickname be?
 
-# This script creates a shuffle function, then creates an array to shuffle.
+# This script uses a Fisher-Yates algorithm to reorder the elements of the list
+# and then creates an array to shuffle, shuffles it and prints the result.
+
 # The idea is we can randomly select a "winner" from the array we shuffle.
 
 
