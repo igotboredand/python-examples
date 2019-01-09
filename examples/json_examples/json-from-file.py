@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import json
 
 # Open the file in read mode, load the file.

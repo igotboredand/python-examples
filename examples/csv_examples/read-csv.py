@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import csv
 
 # Open file, for each row print the row. 

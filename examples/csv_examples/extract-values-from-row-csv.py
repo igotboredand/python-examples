@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import csv
 
 # Declare arrays used in the for loop
