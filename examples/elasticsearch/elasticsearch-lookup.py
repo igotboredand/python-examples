@@ -11,7 +11,8 @@ entry_number = sys.argv[1]
 index = sys.argv[2]
 document= sys.argv[3]
 
-#     print('-------------------------------------------')
+print('-------------------------------------------')
 res = es.get(index=index, doc_type=document, id=entry_number)
+print('-------------------------------------------')
  
 print(res)
