@@ -1,4 +1,4 @@
-#iterate over swapi people documents and index them
+#Get entry by entry number.
 import json
 import requests
 from elasticsearch import Elasticsearch
@@ -7,12 +7,11 @@ import sys
 
 es = Elasticsearch('localhost:9200')
 
-r = requests.get('http://localhost:9200') 
-i = sys.argv[1]
-while r.status_code == 200:
-    # r = requests.get('http://swapi.co/api/people/'+ str(i))
-    # print(r.content)
-    # print('-------------------------------------------')
-    es.get(index='starwars', doc_type='people', id=5)
+entry_number = sys.argv[1]
+index = sys.argv[2]
+document= sys.argv[3]
+
+#     print('-------------------------------------------')
+res = es.get(index=index, doc_type=document, id=entry_number)
  
-print(i)
+print(res)
