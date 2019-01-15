@@ -6,7 +6,7 @@ from elasticsearch import Elasticsearch
 es = Elasticsearch('localhost:9200')
 
 r = requests.get('http://localhost:9200') 
-i = 85
+i = 1
 
 while r.status_code == 200:
     r = requests.get('http://swapi.co/api/people/'+ str(i))
